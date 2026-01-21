@@ -26,6 +26,7 @@ jobs:
         uses: kmesiab/safetycli-self-healing-action@v1.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          safety_api_key: ${{ secrets.SAFETY_API_KEY }}
           severity_threshold: 'medium'
           assign_to_copilot: 'true'
           copilot_agent: 'copilot'
