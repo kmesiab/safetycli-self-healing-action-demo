@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Run SafetyCLI Self-Healing Action
-        uses: kmesiab/safetycli-self-healing-action@feature/upgrade-to-scan
+        uses: kmesiab/safetycli-self-healing-action@21fdb4e
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           safety_api_key: ${{ secrets.SAFETY_API_KEY }}
