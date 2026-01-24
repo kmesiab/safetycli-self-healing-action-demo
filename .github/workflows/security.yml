@@ -28,6 +28,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           safety_api_key: ${{ secrets.SAFETY_API_KEY }}
           stage: 'cicd'  # Testing new stage parameter
+          max_issues: '5'  # Limit to 5 issues for testing
           severity_threshold: 'medium'
           assign_to_copilot: 'true'
           copilot_agent: 'copilot'
