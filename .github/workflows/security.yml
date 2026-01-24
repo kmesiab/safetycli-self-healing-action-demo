@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Run SafetyCLI Self-Healing Action
-        uses: kmesiab/safetycli-self-healing-action@21fdb4edd516fa6438fce556729938204a4ab134
+        uses: kmesiab/safetycli-self-healing-action@70f5894517aa94a346f06ddc2b137dc75ddcf001
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           safety_api_key: ${{ secrets.SAFETY_API_KEY }}
